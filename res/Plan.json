@@ -1,0 +1,428 @@
+[
+  {
+    "Hole": "01",
+    "Shot": "1",
+    "Distance": "385",
+    "Lie": "T"
+  },
+  {
+    "Hole": "01",
+    "Shot": "2",
+    "Distance": "147",
+    "Lie": "F"
+  },
+  {
+    "Hole": "01",
+    "Shot": "3",
+    "Distance": "14.7",
+    "Lie": "G"
+  },
+  {
+    "Hole": "01",
+    "Shot": "4",
+    "Distance": "1.4",
+    "Lie": "G"
+  },
+  {
+    "Hole": "02",
+    "Shot": "1",
+    "Distance": "352",
+    "Lie": "T"
+  },
+  {
+    "Hole": "02",
+    "Shot": "2",
+    "Distance": "140",
+    "Lie": "F"
+  },
+  {
+    "Hole": "02",
+    "Shot": "3",
+    "Distance": "14",
+    "Lie": "G"
+  },
+  {
+    "Hole": "02",
+    "Shot": "4",
+    "Distance": "1.4",
+    "Lie": "G"
+  },
+  {
+    "Hole": "03",
+    "Shot": "1",
+    "Distance": "484",
+    "Lie": "T"
+  },
+  {
+    "Hole": "03",
+    "Shot": "2",
+    "Distance": "265",
+    "Lie": "F"
+  },
+  {
+    "Hole": "03",
+    "Shot": "3",
+    "Distance": "74",
+    "Lie": "F"
+  },
+  {
+    "Hole": "03",
+    "Shot": "4",
+    "Distance": "7",
+    "Lie": "G"
+  },
+  {
+    "Hole": "03",
+    "Shot": "5",
+    "Distance": "0.7",
+    "Lie": "G"
+  },
+  {
+    "Hole": "04",
+    "Shot": "1",
+    "Distance": "133",
+    "Lie": "F"
+  },
+  {
+    "Hole": "04",
+    "Shot": "2",
+    "Distance": "13",
+    "Lie": "G"
+  },
+  {
+    "Hole": "04",
+    "Shot": "3",
+    "Distance": "1.3",
+    "Lie": "G"
+  },
+  {
+    "Hole": "05",
+    "Shot": "1",
+    "Distance": "309",
+    "Lie": "T"
+  },
+  {
+    "Hole": "05",
+    "Shot": "2",
+    "Distance": "110",
+    "Lie": "F"
+  },
+  {
+    "Hole": "05",
+    "Shot": "3",
+    "Distance": "11",
+    "Lie": "G"
+  },
+  {
+    "Hole": "05",
+    "Shot": "4",
+    "Distance": "1.1",
+    "Lie": "G"
+  },
+  {
+    "Hole": "06",
+    "Shot": "1",
+    "Distance": "267",
+    "Lie": "T"
+  },
+  {
+    "Hole": "06",
+    "Shot": "2",
+    "Distance": "80",
+    "Lie": "F"
+  },
+  {
+    "Hole": "06",
+    "Shot": "3",
+    "Distance": "8",
+    "Lie": "G"
+  },
+  {
+    "Hole": "06",
+    "Shot": "4",
+    "Distance": "0.8",
+    "Lie": "G"
+  },
+  {
+    "Hole": "07",
+    "Shot": "1",
+    "Distance": "476",
+    "Lie": "T"
+  },
+  {
+    "Hole": "07",
+    "Shot": "2",
+    "Distance": "240",
+    "Lie": "F"
+  },
+  {
+    "Hole": "07",
+    "Shot": "3",
+    "Distance": "37",
+    "Lie": "F"
+  },
+  {
+    "Hole": "07",
+    "Shot": "4",
+    "Distance": "3.7",
+    "Lie": "G"
+  },
+  {
+    "Hole": "07",
+    "Shot": "5",
+    "Distance": "0.4",
+    "Lie": "G"
+  },
+  {
+    "Hole": "08",
+    "Shot": "1",
+    "Distance": "128",
+    "Lie": "F"
+  },
+  {
+    "Hole": "08",
+    "Shot": "2",
+    "Distance": "12",
+    "Lie": "G"
+  },
+  {
+    "Hole": "08",
+    "Shot": "3",
+    "Distance": "1.2",
+    "Lie": "G"
+  },
+  {
+    "Hole": "09",
+    "Shot": "1",
+    "Distance": "268",
+    "Lie": "T"
+  },
+  {
+    "Hole": "09",
+    "Shot": "2",
+    "Distance": "90",
+    "Lie": "F"
+  },
+  {
+    "Hole": "09",
+    "Shot": "3",
+    "Distance": "9",
+    "Lie": "G"
+  },
+  {
+    "Hole": "09",
+    "Shot": "4",
+    "Distance": "0.9",
+    "Lie": "G"
+  },
+  {
+    "Hole": "10",
+    "Shot": "1",
+    "Distance": "473",
+    "Lie": "T"
+  },
+  {
+    "Hole": "10",
+    "Shot": "2",
+    "Distance": "230",
+    "Lie": "F"
+  },
+  {
+    "Hole": "10",
+    "Shot": "3",
+    "Distance": "40",
+    "Lie": "F"
+  },
+  {
+    "Hole": "10",
+    "Shot": "4",
+    "Distance": "4",
+    "Lie": "G"
+  },
+  {
+    "Hole": "10",
+    "Shot": "5",
+    "Distance": "0.4",
+    "Lie": "G"
+  },
+  {
+    "Hole": "11",
+    "Shot": "1",
+    "Distance": "394",
+    "Lie": "T"
+  },
+  {
+    "Hole": "11",
+    "Shot": "2",
+    "Distance": "162",
+    "Lie": "F"
+  },
+  {
+    "Hole": "11",
+    "Shot": "3",
+    "Distance": "16",
+    "Lie": "G"
+  },
+  {
+    "Hole": "11",
+    "Shot": "4",
+    "Distance": "1.6",
+    "Lie": "G"
+  },
+  {
+    "Hole": "12",
+    "Shot": "1",
+    "Distance": "353",
+    "Lie": "T"
+  },
+  {
+    "Hole": "12",
+    "Shot": "2",
+    "Distance": "125",
+    "Lie": "F"
+  },
+  {
+    "Hole": "12",
+    "Shot": "3",
+    "Distance": "12",
+    "Lie": "G"
+  },
+  {
+    "Hole": "12",
+    "Shot": "4",
+    "Distance": "1.2",
+    "Lie": "G"
+  },
+  {
+    "Hole": "13",
+    "Shot": "1",
+    "Distance": "373",
+    "Lie": "T"
+  },
+  {
+    "Hole": "13",
+    "Shot": "2",
+    "Distance": "150",
+    "Lie": "F"
+  },
+  {
+    "Hole": "13",
+    "Shot": "3",
+    "Distance": "15",
+    "Lie": "G"
+  },
+  {
+    "Hole": "13",
+    "Shot": "4",
+    "Distance": "1.5",
+    "Lie": "G"
+  },
+  {
+    "Hole": "14",
+    "Shot": "1",
+    "Distance": "143",
+    "Lie": "F"
+  },
+  {
+    "Hole": "14",
+    "Shot": "2",
+    "Distance": "14",
+    "Lie": "G"
+  },
+  {
+    "Hole": "14",
+    "Shot": "3",
+    "Distance": "1.4",
+    "Lie": "G"
+  },
+  {
+    "Hole": "15",
+    "Shot": "1",
+    "Distance": "280",
+    "Lie": "T"
+  },
+  {
+    "Hole": "15",
+    "Shot": "2",
+    "Distance": "77",
+    "Lie": "F"
+  },
+  {
+    "Hole": "15",
+    "Shot": "3",
+    "Distance": "7",
+    "Lie": "G"
+  },
+  {
+    "Hole": "15",
+    "Shot": "4",
+    "Distance": "0.7",
+    "Lie": "G"
+  },
+  {
+    "Hole": "16",
+    "Shot": "1",
+    "Distance": "290",
+    "Lie": "T"
+  },
+  {
+    "Hole": "16",
+    "Shot": "2",
+    "Distance": "54",
+    "Lie": "F"
+  },
+  {
+    "Hole": "16",
+    "Shot": "3",
+    "Distance": "5",
+    "Lie": "G"
+  },
+  {
+    "Hole": "16",
+    "Shot": "4",
+    "Distance": "0.5",
+    "Lie": "G"
+  },
+  {
+    "Hole": "17",
+    "Shot": "1",
+    "Distance": "156",
+    "Lie": "F"
+  },
+  {
+    "Hole": "17",
+    "Shot": "2",
+    "Distance": "15",
+    "Lie": "G"
+  },
+  {
+    "Hole": "17",
+    "Shot": "3",
+    "Distance": "0.5",
+    "Lie": "G"
+  },
+  {
+    "Hole": "18",
+    "Shot": "1",
+    "Distance": "352",
+    "Lie": "T"
+  },
+  {
+    "Hole": "18",
+    "Shot": "2",
+    "Distance": "120",
+    "Lie": "F"
+  },
+  {
+    "Hole": "18",
+    "Shot": "3",
+    "Distance": "12",
+    "Lie": "G"
+  },
+  {
+    "Hole": "18",
+    "Shot": "4",
+    "Distance": "1.2",
+    "Lie": "G"
+  }
+]

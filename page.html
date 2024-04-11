@@ -1,0 +1,178 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+
+<body>
+	<div ng-controller="myCtrl">
+		<label>Hole:</label>
+		<input type="text" ng-model="Hole" ng-change="holePick()" placeholder="Hole #">
+
+		<label>Shot:</label>
+		<input type="text" ng-model="Shot" placeholder="Shot #">
+
+		<label>Lie:</label>
+		<select ng-model="Lie" ng-options="x for x in ballLies"></select>
+
+		<label>Distance:</label>
+		<input type="text" ng-model="distance" placeholder="pin distance">
+
+		<label>Penalties:</label>
+		<input type="text" ng-model="penalties" placeholder="penalties #">
+
+		<button ng-click="save()">Save</button>
+
+		<hr>
+		<h1>Current Hole: <ins>{{Hole}}</ins> & Shot <ins>{{Shot}}</ins></h1>
+		<h2>Ball is sitting in/on the <ins>{{Lie}}</ins> at <ins>{{distance}}</ins> m. of the pin</h2>
+
+<div style="display:flex">
+		<div style="flex:auto">
+			<table>
+				<tr><th>Pendu</th><th>Shot</th><th>Distance</th><th>Lie</th></tr>
+
+				<tr ng-repeat="e in Pendu | filter:{Hole:Hole}">
+				<td></td>
+				<td>{{e.Shot}}</td>
+				<td>{{e.Distance}}</td>
+				<td>{{e.Lie}}</td>
+				</tr>
+			</table>
+			<table>
+				<tr><th>Off Fairway</th><th>Shot</th><th>Distance</th><th>Lie</th></tr>
+
+				<tr ng-repeat="e in OffFairway | filter:{Hole:Hole}">
+				<td></td>
+				<td>{{e.Shot}}</td>
+				<td>{{e.Distance}}</td>
+				<td>{{e.Lie}}</td>
+				</tr>
+			</table>
+			<table>
+				<tr><th>Plan</th><th>Shot</th><th>Distance</th><th>Lie</th></tr>
+
+				<tr ng-repeat="e in Plan | filter:{Hole:Hole}">
+				<td></td>
+				<td>{{e.Shot}}</td>
+				<td>{{e.Distance}}</td>
+				<td>{{e.Lie}}</td>
+				</tr>
+			</table>
+			<table>
+				<tr><th>Tour</th><th>Shot</th><th>Distance</th><th>Lie</th></tr>
+
+				<tr ng-repeat="e in Tour | filter:{Hole:Hole}">
+				<td></td>
+				<td>{{e.Shot}}</td>
+				<td>{{e.Distance}}</td>
+				<td>{{e.Lie}}</td>
+				</tr>
+			</table>
+		</div>
+
+		<div style="flex:auto">
+			<table>
+				<tr><th>Hole</th><th>Par</th></tr>
+
+				<tr ng-repeat="e in Course | filter:{Hole:Hole}:strict">
+				<td>{{e.Hole}}</td>
+				<td>{{e.Par}}</td>
+				</tr>
+			</table>
+			<hr>
+			<table>
+				<tr><th>Tee</th><th>Fairway</th><th>Rough</th><th>Sand</th><th>Recovery</th><th>Green</th></tr>
+
+				<tr ng-repeat="e in Reference | filter:{Dist:distance}:true">
+				<td>{{e.Tee}}</td>
+				<td>{{e.Fairway}}</td>
+				<td>{{e.Rough}}</td>
+				<td>{{e.Sand}}</td>
+				<td>{{e.Recovery}}</td>
+				<td>{{e.Green}}</td>
+				</tr>
+			</table>		
+		</div>
+
+		<div style="flex:auto">
+			<table>
+				<tr><th>Distance</th><th>Description</th></tr>
+
+				<tr ng-repeat="e in Reference | filter:{Dist:distance}:true">
+				<td>{{e.Dist}}</td>
+				<td>{{e.desc}}</td>
+				</tr>
+			</table>	
+		</div>
+</div>
+
+	</div>
+</body>
+
+<script type="text/javascript">
+	console.log(localStorage);
+	var app = angular.module('myApp', []);
+
+	app.controller('myCtrl', function($scope, $http) {	
+		$scope.Hole = localStorage.getItem("Hole");
+		$scope.Shot = localStorage.getItem("Shot");
+		$scope.Lie = localStorage.getItem("Lie");
+		$scope.distance = localStorage.getItem("distance");
+		$scope.penalties = localStorage.getItem("penalties");
+
+		$scope.ballLies = ["Tee", "Fairway", "Rough", "Sand", "Recovery", "Green"];
+
+		$scope.save = function() {
+			localStorage.setItem("Hole", $scope.Hole);
+			localStorage.setItem("Shot", $scope.Shot);
+			localStorage.setItem("Lie", $scope.Lie);
+			localStorage.setItem("distance", $scope.distance);
+			localStorage.setItem("penalties", $scope.penalties);
+		}
+
+		
+		$scope.holePick = function() {
+			console.log($scope.Hole.length);
+
+			if($scope.Hole.length == 1)
+				$scope.Hole = "0" + $scope.Hole;
+
+			if($scope.Hole.length == 3)
+				$scope.Hole = $scope.Hole.slice(1);
+
+			$scope.Shot = "1";
+		}
+
+		$http.get("/reference").then( function(response) {
+			$scope.Reference = response.data;
+			console.log(response.data);
+		});
+
+		$http.get("/plan").then( function(response) {
+			$scope.Plan = response.data;
+			console.log(response.data);
+		});
+
+		$http.get("/isabella").then( function(response) {
+			$scope.Course = response.data;
+			console.log(response.data);
+		});
+
+		$http.get("/pendu").then( function(response) {
+			$scope.Pendu = response.data;
+			console.log(response.data);
+		});
+
+		$http.get("/offFairway").then( function(response) {
+			$scope.OffFairway = response.data;
+			console.log(response.data);
+		});
+
+		$http.get("/tour").then( function(response) {
+			$scope.Tour = response.data;
+			console.log(response.data);
+		});
+	});
+</script>
+</html>
