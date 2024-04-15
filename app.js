@@ -30,7 +30,7 @@ async function run() {
 run().catch(console.dir);
 
 app.get('/', (req, res) => {
-	fs.readFile('page.html', function(err, data) {
+	fs.readFile('pages/page.html', function(err, data) {
 		res.writeHead(200, {'Content-Type': 'text/html'});
 		res.write(data);
 		return res.send();
